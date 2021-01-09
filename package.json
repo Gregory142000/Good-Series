@@ -1,0 +1,19 @@
+{
+  "name": "good-series",
+  "version": "0.1.0",
+  "description": "Website that show TV series with the use of API TVmaze",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gregory142000/Good-Series.git"
+  },
+  "author": "Gregory Vicent",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gregory142000/Good-Series/issues"
+  },
+  "homepage": "https://github.com/Gregory142000/Good-Series#readme"
+}
