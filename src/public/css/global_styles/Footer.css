@@ -1,0 +1,38 @@
+/** Footer Styles*/
+.Footer{
+  background-color: #4FFFCA;
+  width: auto;
+  display: grid;
+  grid-template-columns: 55% 40%;
+  grid-template-rows: repeat(2, auto);
+  padding: 2%;
+}
+  .Footer__title{
+    grid-column: 1 / 3;
+    font-size: .8rem;
+    margin: 2vh 0;
+  }
+  .Footer__info{
+    grid-column: 1 / 2;
+  }
+    .Footer__text{
+      font-size: .7rem;
+      font-weight: 300;
+    }
+      /* .Footer__linkGitHub{} */
+  .Footer__socialMedia{
+    grid-column: 2 / 3;
+  }
+    .Footer__infoAuthor{
+      font-size: .8rem;
+    }
+    .Footer__link{
+      color: #000;
+      font-size: 1.5rem;
+      margin: 1vh 5px;
+      transition: all .3s ease;
+    }
+    .Footer__link--hover:hover{
+      color: rgb(65, 63, 63);
+      font-size: 1.7rem;
+    }

@@ -1,0 +1,41 @@
+/** Styles of the Header and the search bar */
+.Header{
+  width: 100%;
+  background-color: #4FFFCA;
+  height: 30vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 60% 40%;
+}
+  .Header__title{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+  }
+    .Header__link{
+      font-family: 'East Sea Dokdo', cursive;
+      font-size: 3.7rem; text-decoration: none;
+      font-weight: 300;
+      color: #000;
+    }
+  .Header__form{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+    .Header__search{
+      background-color: #fff;
+      width: 60%;
+      height: 30px;
+      border: none;
+      border-radius: 5px;
+      padding: 1.5%;
+    }
+    .Header__button{
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+      background-color: rgb(200, 200, 200);
+      margin-left: 1vw;
+      border: none;
+    }

@@ -9,9 +9,11 @@ module.exports = {
     path: __dirname + "/build",
     filename: "main.js"
   },
+  resolve: {
+    extensions: [".js", ".jsx"]
+  },
   devtool: "inline-source-map",
   devServer: {
-    open: true,
     index: "index.html",
     contentBase: __dirname + "/src",
     compress: true
