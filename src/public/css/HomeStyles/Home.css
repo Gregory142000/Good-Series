@@ -1,0 +1,33 @@
+.Home{
+  background-color: #3C3C3C;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+}
+  .Home__title{
+    color: #ffffff;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 1.5rem;
+    grid-row: 1 / 2;
+    margin: 10px;
+  }
+  .Home__imageBox{
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row: auto;
+    grid-auto-flow: column;
+    margin: 5px;
+  }
+    .Home__imageBox .SeriesCover:nth-child(3){
+      display: none;
+    }
+    .Home__imageBox .SeriesCover:nth-child(4){
+      display: none;
+    }
+    .Home__imageBox .SeriesCover:nth-child(5){
+      display: none;
+    }
+    .Home__imageBox .SeriesCover:nth-child(6){
+      display: none;
+    }

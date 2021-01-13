@@ -1,0 +1,11 @@
+.AllSection__error{
+  color: rgb(236, 25, 25);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.AllSection__loader{
+  width: 40%;
+  justify-self: center;
+  align-self: center;
+}
