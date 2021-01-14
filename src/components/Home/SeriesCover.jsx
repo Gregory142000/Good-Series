@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 
 import "../../public/css/HomeStyles/SeriesCover.css"
 
@@ -8,6 +8,7 @@ function SeriesCover(props){
       <img className="SeriesCover__image" src={props.src} alt={props.alt} title={props.alt} />
       <div className="SeriesCover__textBox" >
         <p  className="SeriesCover__text">{props.text}</p>
+        <a className="SeriesCover__link" href="#">More</a>
       </div>
     </div>
   )

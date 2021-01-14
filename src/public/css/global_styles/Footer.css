@@ -3,6 +3,8 @@
   background-color: #4FFFCA;
   width: auto;
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: 55% 40%;
   grid-template-rows: repeat(2, auto);
   padding: 2%;
@@ -22,6 +24,7 @@
       /* .Footer__linkGitHub{} */
   .Footer__socialMedia{
     grid-column: 2 / 3;
+    justify-self: end;
   }
     .Footer__infoAuthor{
       font-size: .8rem;

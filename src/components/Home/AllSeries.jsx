@@ -43,7 +43,7 @@ function AllSeries() {
           alt={el._embedded.show.name} 
           text={(el._embedded.show.summary === "")
             ? "Not Description" 
-            : el._embedded.show.summary}
+            : el._embedded.show.summary.replace(/(<p>|<\/p>)/g, "")}
         />
       )
     )
