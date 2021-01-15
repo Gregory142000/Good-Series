@@ -33,3 +33,10 @@
     .Home__imageBox .SeriesCover:nth-child(6){
       display: none;
     }
+  .Home__sectionPreview{
+    background-color: #fff;
+    display: grid;
+    /* grid-template-columns: repeat(2, 55% 45%); */
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
+  }

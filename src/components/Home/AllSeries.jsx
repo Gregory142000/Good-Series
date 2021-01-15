@@ -5,7 +5,7 @@ import SeriesCover from './SeriesCover'
 /** Styles Import */
 import "../../public/css/HomeStyles/AllSection.css"
 
-
+/**Get TVMaze api with Fetch and show series data */
 function AllSeries() {
 
   const [ todaySeries, setTodaySeries ] = useState([])
@@ -41,9 +41,9 @@ function AllSeries() {
             ? el._embedded.show.image.medium 
             : "http://static.tvmaze.com/images/no-img/no-img-portrait-text.png"} 
           alt={el._embedded.show.name} 
-          text={(el._embedded.show.summary === "")
+          text={(!el._embedded.show.summary)
             ? "Not Description" 
-            : el._embedded.show.summary.replace(/(<p>|<\/p>)/g, "")}
+            : el._embedded.show.summary.replace(/(\<.\>|\<\/.\>)/g, "")}
         />
       )
     )

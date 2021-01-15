@@ -16,9 +16,13 @@ function Home() {
         <div className="Home__imageBox">
           <AllSeries />
         </div>
-      </section>  
-      <CategorySection />
+      </section>
+      <section className="Home__sectionPreview">
       <PreviewSection />
+      </section>  
+      <section>
+        <CategorySection genre="Drama"/>
+      </section>
     </Fragment>
   )
 }

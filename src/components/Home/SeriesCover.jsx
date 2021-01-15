@@ -1,7 +1,8 @@
+/** Main Import */
 import React from 'react'
-
+/** Styles Import */
 import "../../public/css/HomeStyles/SeriesCover.css"
-
+/** Show Series */
 function SeriesCover(props){
   return(
     <div className="SeriesCover">
