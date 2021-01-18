@@ -14,14 +14,13 @@ function PreviewSection() {
 
   useEffect(() => {
     let random = Math.floor((Math.random() * (100 - 0 + 1)) + 1)
-    console.log(random)
     fetch(`http://api.tvmaze.com/shows/${random}`)
     .then((res) => res.json())
     .then(
       (res) => {
         setSeries(res)
         setSeriesImage(
-          res.image.medium
+          res.image
             ? res.image.medium
             : null
           )

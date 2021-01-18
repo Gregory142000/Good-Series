@@ -21,7 +21,12 @@ function Home() {
       <PreviewSection />
       </section>  
       <section>
-        <CategorySection genre="Drama"/>
+        <CategorySection tema="Action" arrow={"￫"}/>
+        <CategorySection tema="Romance" arrow={"￩"} title={"CategorySection__title--alignLeft"} seriesBox={"CategorySection__seriesBox--inverse"} link={"CategorySection__link--inverse"}/>
+        <CategorySection tema="Comedy" arrow={"￫"}/>
+        <CategorySection tema="Medical" arrow={"￩"} title={"CategorySection__title--alignLeft"} seriesBox={"CategorySection__seriesBox--inverse"} link={"CategorySection__link--inverse"}/>
+        <CategorySection tema="Crime" arrow={"￫"}/>
+        <CategorySection tema="Horror" arrow={"￩"} title={"CategorySection__title--alignLeft"} seriesBox={"CategorySection__seriesBox--inverse"} link={"CategorySection__link--inverse"}/>
       </section>
     </Fragment>
   )

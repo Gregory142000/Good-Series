@@ -2,6 +2,7 @@
 .PreviewSection{
   align-self: end;
   display: grid;
+  margin-bottom: 10px;
 }
   .PreviewSection__title{
     font-family: 'East Sea Dokdo', cursive;
