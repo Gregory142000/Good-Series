@@ -45,7 +45,7 @@ function PreviewSection() {
   }else{
     return(
       <>
-        <Link className="PreviewSection__link" to="#">
+        <Link className="PreviewSection__link" to={`serie/${series.id}`}>
           <img 
             className="PreviewSection__image" 
             src={

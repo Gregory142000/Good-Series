@@ -36,7 +36,7 @@ function AllSeries() {
     return(
       todaySeries.map((el) => 
         <SeriesCover
-          key={el.id} 
+          key={el._embedded.show.id} 
           src={el._embedded.show.image 
             ? el._embedded.show.image.medium 
             : "http://static.tvmaze.com/images/no-img/no-img-portrait-text.png"} 
@@ -44,6 +44,7 @@ function AllSeries() {
           text={(!el._embedded.show.summary)
             ? "Not Description" 
             : el._embedded.show.summary.replace(/(\<.\>|\<\/.\>)/g, "")}
+          myId={el._embedded.show.id}
         />
       )
     )

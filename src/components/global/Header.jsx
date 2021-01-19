@@ -12,13 +12,15 @@ function Header() {
     window.location.href = `/#/search/${href}`
   }
 
+  window.addEventListener("hashchange", () => window.location.reload())
+
   return(
     <header className="Header">
       <h1 className="Header__title">
         <Link className="Header__link" to="/">GOOD SERIES</Link>
       </h1>
       <form action="" className="Header__form">
-        <input id="search" type="search" className="Header__search" placeholder="What do you want to see?" />
+        <input id="search" type="search" className="Header__search" placeholder="What do you want to see?" autoComplete="off" />
         <button className="Header__button" onClick={goSearch}><i className="fas fa-search"></i></button>
       </form>
     </header>

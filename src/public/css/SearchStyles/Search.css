@@ -1,0 +1,38 @@
+body{
+  background-color: #3C3C3C;
+}
+.Search{
+  background-color: #3C3C3C;
+  width: 100%;
+  min-height: 80vh;
+  max-height: auto;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 90%;
+}
+  .Search__error{
+    color: rgb(204, 31, 31);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .Search__loader{
+    margin: 0 auto;
+    justify-self: center;
+    align-self: center;
+  }
+  .Search__title{
+    max-height: 50px;
+    margin-bottom: 2vh;
+    align-self: center;
+    justify-self: center;
+    color: #fff;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 1.8rem;
+  }
+  .Search__seriesContent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(auto, 200px);
+    gap: 5px;
+  }

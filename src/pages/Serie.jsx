@@ -1,7 +1,11 @@
 import React from "react"
 
+import SectionSerie from "../components/Serie/SectionSerie"
+
 function Serie() {
-  return(<h1>I am Serie</h1>)
+  return(
+    <SectionSerie />
+  )
 }
 
 export default Serie 

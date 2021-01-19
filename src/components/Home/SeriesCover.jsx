@@ -1,5 +1,6 @@
 /** Main Import */
 import React from 'react'
+import { Link } from "react-router-dom"
 /** Styles Import */
 import "../../public/css/HomeStyles/SeriesCover.css"
 /** Show Series */
@@ -9,7 +10,7 @@ function SeriesCover(props){
       <img className="SeriesCover__image" src={props.src} alt={props.alt} title={props.alt} />
       <div className="SeriesCover__textBox" >
         <p  className="SeriesCover__text">{props.text}</p>
-        <a className="SeriesCover__link" href="#">More</a>
+        <Link className="SeriesCover__link" to={`serie/${props.myId.toString()}`} >More</Link>
       </div>
     </div>
   )

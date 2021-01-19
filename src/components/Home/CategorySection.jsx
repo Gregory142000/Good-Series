@@ -45,9 +45,17 @@ function CategorySection(props) {
         <h2 className={"CategorySection__title " + props.title}>{props.tema.toUpperCase()}</h2>
         <div className="CategorySection__content">
           <div className={"CategorySection__seriesBox " + props.seriesBox} >
-            { series.map(el => <SeriesCover src={el.image.medium} alt={el.name} title={el.name} key={el.id}/>) }
+            { series.map(el => 
+            <SeriesCover 
+              myId={el.id} 
+              src={el.image 
+                ? el.image.medium
+                : "http://static.tvmaze.com/images/no-img/no-img-portrait-text.png"} 
+              alt={el.name} 
+              key={el.id}
+            />) }
           </div>
-          <Link className={"CategorySection__link " + props.link} to="#">
+          <Link className={"CategorySection__link " + props.link} to={`genre/${props.tema}`}>
             <div className="CategorySection__circle">{props.arrow}</div>
           </Link>
         </div>

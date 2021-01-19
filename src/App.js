@@ -1,10 +1,11 @@
 /** Main imports */
 import React from "react"
 import ReactDOM from "react-dom"
-import { HashRouter, Switch, Route, Link } from "react-router-dom"
+import { HashRouter, Switch, Route} from "react-router-dom"
 /** My componentes imports */
 import Home from "./pages/Home"
 import Search from "./pages/Search"
+import Genres from "./pages/Genres"
 import Serie from "./pages/Serie"
 import Frame from "./components/global/Frame"
 /** Style imports */
@@ -18,7 +19,8 @@ function App(){
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/search" component={Search} />
-          <Route exact path="/Serie" component={Serie} />
+          <Route path="/genre" component={Genres} />
+          <Route path="/serie" component={Serie} />
         </Switch>
       </Frame>
     </HashRouter>

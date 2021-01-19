@@ -1,0 +1,33 @@
+body{
+  background-color: #3C3C3C;
+}
+.Genres{
+  background-color: #3C3C3C;
+  width: 100%;
+  min-height: 80vh;
+  max-height: auto;
+  display: grid;
+}
+  .Genres__error{
+    color: rgb(204, 31, 31);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .Genres__loader{
+    margin: 0 auto;
+    justify-self: center;
+    align-self: center;
+  }
+  .Genres__title{
+    margin-bottom: 2vh;
+    text-align: center;
+    color: #fff;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 1.8rem;
+  }
+  .Genres__seriesContent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
