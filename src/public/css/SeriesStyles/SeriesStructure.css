@@ -1,0 +1,83 @@
+.SeriesStructure {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  min-height: 80vh;
+  max-height: auto;
+}
+  .SeriesStructure__error{
+    color: rgb(202, 47, 47);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .SeriesStructure__loader{
+    justify-self: center;
+    align-self: center;
+  }
+  .SeriesStructure__image{
+    justify-self: center;
+    margin: 2vh 0;
+  }
+  .SeriesStructure__data{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "title title" 
+    "preBox genBox";
+  }
+    .SeriesStructure__title{
+      text-align: center;
+      justify-self: center;
+      align-self: center;
+      color: #fff;
+      font-family: 'East Sea Dokdo', cursive;
+      font-size: 2rem;
+      grid-area: title;
+      width: 90%;
+    }
+    .SeriesStructure__premierBox{
+      grid-area: preBox;
+    }
+      .SeriesStructure__subtitle{
+        margin-left: 4vw;
+        font-family: 'East Sea Dokdo', cursive;
+        font-size: 1.5rem;
+        color: #fff;
+      }
+      .SeriesStructure__premier{
+        background-color: #4FFFCA;
+        margin-left: 4vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 25px;
+        border-radius: 5px;
+      }
+    .SeriesStructure__genresBox{
+      grid-area: genBox;
+    }
+    .SeriesStructure__genres{
+      display: flex;
+      flex-wrap: wrap;
+      height: auto;
+    }
+      .SeriesStructure__textGenres{
+        margin: 0 1vw 5px 1vw;
+        background-color: #4FFFCA;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+      }
+  .SeriesStructure__summary{
+    background-color: #4FFFCA;
+    width: auto;
+    margin: 2vh 1vw;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+  }
